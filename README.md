@@ -1,7 +1,7 @@
 # toolbox
-#### a small Alpine Linux based toolbox for CoreOS
+#### a small Alpine Linux based toolbox
 
-Obnam is a backup tool, many network realted tools, nano text editor, etc.
+It includes many network realted tools, nano and vim text editors, Obnam as a backup tool, git and many others listed below.
 
 List of Tools/Packages:
 
