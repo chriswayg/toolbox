@@ -1,5 +1,5 @@
 # toolbox
-####a small Alpine Linux based toolbox for CoreOS
+#### a small Alpine Linux based toolbox for CoreOS
 
 Obnam is a backup tool, many network realted tools, nano text editor, etc.
 
@@ -11,6 +11,7 @@ List of Tools/Packages:
 		bash bash-completion gettext logrotate tar rsync ncurses nano 
 		zip ncdu hdparm obnam screen pciutils psmisc tree wget 
 		speedtest-cli psmisc shadow arping dstat pv lshw sslscan
+		
 		
 - the image weighs in at about 120 MB
 
