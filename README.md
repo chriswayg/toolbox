@@ -1,9 +1,9 @@
 # toolbox
-#### a small Alpine Linux based toolbox
+#### a small Alpine Linux based toolbox for Docker on CoreOS
 
 It includes many network realted tools, nano and vim text editors, Obnam as a backup tool, git and many others listed below.
 
-List of Tools/Packages:
+###### List of Tools/Packages:
 
 		git file less vim atop htop ltrace strace 
 		sysstat lsof bridge-utils ca-certificates curl 
@@ -15,9 +15,11 @@ List of Tools/Packages:
 		
 - the image weighs in at about 120 MB
 
-To set as the default CoreOS toolbox:
+###### To set as the default CoreOS toolbox:
 
     sudo cat > ~/.toolboxrc << "EOF"
     TOOLBOX_DOCKER_IMAGE=chriswayg/toolbox
     TOOLBOX_USER=root
     EOF
+
+See the Docker Hub entry for this container: https://hub.docker.com/r/chriswayg/toolbox/
