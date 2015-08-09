@@ -3,6 +3,7 @@ MAINTAINER Christian Wagner <chriswayg@gmail.com>
 
 RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     apk add --update \
+                git
 		file \
 		less \
 		vim  \
