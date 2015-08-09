@@ -5,7 +5,7 @@ Obnam is a backup tool, many network realted tools, nano text editor, etc.
 
 List of Tools/Packages:
 
-		file less vim atop htop ltrace strace 
+		git file less vim atop htop ltrace strace 
 		sysstat lsof bridge-utils ca-certificates curl 
 		ethtool iftopiperf iproute2 net-tools nmap tcpdump
 		bash bash-completion gettext logrotate tar rsync ncurses nano 
