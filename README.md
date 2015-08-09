@@ -12,7 +12,7 @@ List of Tools/Packages:
 		zip ncdu hdparm obnam screen pciutils psmisc tree wget 
 		speedtest-cli psmisc shadow arping dstat pv lshw sslscan
 		
-the image is only about 120 MB
+- the image weighs in at about 120 MB
 
 To set as the default CoreOS toolbox:
 
