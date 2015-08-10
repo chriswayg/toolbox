@@ -1,7 +1,7 @@
 # toolbox
-#### a small Alpine Linux based toolbox for Docker on CoreOS
+#### A small Alpine Linux based toolbox for Docker on CoreOS
 
-This toolbox includes general networking and admin tools, nano and vim text editors, rsync and Obnam for backup, git and many tools geared towards performance metric gathering and debugging: Some of these tools include generic ones like htop, dstat, atop; more specific tools like iostat, iotop, pidstat, lsof and mpstat; network oriented tools like tcpdump, iftop, iperf, ethtool and the iproute2 tools; and strace/ltrace for tracing. These are added to the tiny base install of Alpine, keepnig the whole package as small as possible.
+This toolbox includes general networking and admin tools, nano and vim text editors, rsync and Obnam for backup, git and many tools geared towards performance metric gathering and debugging: Some of these tools include generic ones like htop, dstat, atop; more specific tools like iostat, iotop, pidstat, lsof and mpstat; network oriented tools like tcpdump, iftop, iperf, ethtool and the iproute2 tools; and strace/ltrace for tracing. These are added to the tiny base install of Alpine, keeping the whole image as small as possible.
 
 - the image weighs in at about 120 MB
 
