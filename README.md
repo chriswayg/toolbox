@@ -1,18 +1,18 @@
 # toolbox
 #### A small Alpine Linux based toolbox for Docker on CoreOS
 
-This toolbox includes general networking and admin tools, nano and vim text editors, rsync and Obnam for backup, git and many tools geared towards performance metric gathering and debugging: Some of these tools include generic ones like htop, dstat, atop; more specific tools like iostat, iotop, pidstat, lsof and mpstat; network oriented tools like tcpdump, iftop, iperf, ethtool and the iproute2 tools; and strace/ltrace for tracing. These are added to the tiny base install of Alpine, keeping the whole image as small as possible.
+This toolbox includes general networking and admin tools, nano and vim text editors, rsync and Obnam for backup, git and many tools geared towards performance metric gathering and debugging: Some of these tools include generic ones like htop, dstat, atop; more specific tools like iostat, iotop, pidstat and mpstat; network oriented tools like tcpdump, iftop, iperf and the iproute2 tools; and strace/ltrace for tracing. These are added to the tiny base install of Alpine, keeping the whole image as small as possible.
 
 - the image weighs in at about 120 MB
 
 ##### Complete list of Tools/Packages:
 
-		git file less vim atop htop ltrace strace 
-		sysstat lsof bridge-utils ca-certificates curl 
-		ethtool iftop iperf iproute2 net-tools nmap tcpdump
-		bash bash-completion gettext logrotate tar rsync ncurses nano 
-		zip ncdu hdparm obnam screen pciutils psmisc tree wget 
-		speedtest-cli shadow arping dstat pv lshw sslscan
+		file atop htop ltrace strace 
+		sysstat bridge-utils ca-certificates 
+		iftop iperf iproute2 net-tools nmap tcpdump
+		bash bash-completion gettext logrotate ncurses nano 
+		ncdu hdparm obnam screen pciutils psmisc tree
+		speedtest-cli shadow dstat pv sslscan
 
 ##### To set as the default CoreOS toolbox:
 
