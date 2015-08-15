@@ -30,8 +30,8 @@ RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/re
 		obnam \
 		screen \
 		pciutils \
-		psmisc \
 		tree \
+		psmisc@testing \
 		speedtest-cli \
 		shadow@testing \
 		dstat@testing \
