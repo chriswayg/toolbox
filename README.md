@@ -12,7 +12,7 @@ This toolbox includes general networking and admin tools, nano and vim text edit
 		ethtool iftop iperf iproute2 net-tools nmap tcpdump
 		bash bash-completion gettext logrotate tar rsync ncurses nano 
 		zip ncdu hdparm obnam screen pciutils psmisc tree wget 
-		speedtest-cli psmisc shadow arping dstat pv lshw sslscan
+		speedtest-cli shadow arping dstat pv lshw sslscan
 
 ##### To set as the default CoreOS toolbox:
 
