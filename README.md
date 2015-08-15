@@ -21,7 +21,7 @@ This toolbox includes general networking and admin tools, nano and vim text edit
     TOOLBOX_USER=root
     EOF
 
-See the [Docker Hub](https://hub.docker.com/r/chriswayg/toolbox/) entry for this container. And the Github [Repository.](https://github.com/chriswayg/toolbox)
+See the [Docker Hub](https://hub.docker.com/r/chriswayg/toolbox/) entry for this container.
 
 ---
 ###### License:
