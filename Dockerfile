@@ -39,4 +39,6 @@ RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/re
 		sslscan@testing && \
     rm -rf /var/cache/apk/*
 
+WORKDIR /media/root
+
 CMD ["bash"]
