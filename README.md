@@ -7,21 +7,25 @@ This toolbox includes general networking and admin tools, nano and vim text edit
 
 ##### Complete list of Tools/Packages:
 
-		file atop htop ltrace strace 
-		sysstat bridge-utils ca-certificates 
-		iftop iperf iproute2 net-tools nmap tcpdump
-		bash bash-completion gettext logrotate ncurses nano 
-		ncdu hdparm obnam screen pciutils psmisc tree
-		speedtest-cli shadow dstat pv sslscan
+```
+file atop htop ltrace strace 
+sysstat bridge-utils ca-certificates 
+iftop iperf iproute2 net-tools nmap tcpdump
+bash bash-completion gettext logrotate ncurses nano 
+ncdu hdparm obnam screen pciutils psmisc tree
+speedtest-cli shadow dstat pv sslscan
+```
 
 ##### To set as the default CoreOS toolbox and run:
 
-    sudo cat > ~/.toolboxrc << "EOF"
-    TOOLBOX_DOCKER_IMAGE=chriswayg/toolbox
-    TOOLBOX_USER=root
-    EOF
-    
-    toolbox
+```
+sudo cat > ~/.toolboxrc << "EOF"
+TOOLBOX_DOCKER_IMAGE=chriswayg/toolbox
+TOOLBOX_USER=root
+EOF
+
+toolbox
+```
     
 Inside of the toolbox, the machine's filesystem is mounted to /media/root
 
