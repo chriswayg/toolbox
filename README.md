@@ -22,6 +22,8 @@ This toolbox includes general networking and admin tools, nano and vim text edit
     EOF
     
     toolbox
+    
+Inside of the toolbox, the machine's filesystem is mounted to /media/root
 
 See also https://coreos.com/os/docs/latest/install-debugging-tools.html
 
