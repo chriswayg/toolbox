@@ -14,14 +14,16 @@ This toolbox includes general networking and admin tools, nano and vim text edit
 		ncdu hdparm obnam screen pciutils psmisc tree
 		speedtest-cli shadow dstat pv sslscan
 
-##### To set as the default CoreOS toolbox:
+##### To set as the default CoreOS toolbox and run:
 
     sudo cat > ~/.toolboxrc << "EOF"
     TOOLBOX_DOCKER_IMAGE=chriswayg/toolbox
     TOOLBOX_USER=root
     EOF
+    
+    toolbox
 
-See the [Docker Hub](https://hub.docker.com/r/chriswayg/toolbox/) entry for this container.
+See also https://coreos.com/os/docs/latest/install-debugging-tools.html
 
 ---
 ###### License:
