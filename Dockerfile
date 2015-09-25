@@ -1,7 +1,10 @@
-FROM alpine:latest
+FROM alpine
 MAINTAINER Christian Wagner <chriswayg@gmail.com>
 
-RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
+# most utilities are from the latest stable alpine release
+# add some additional utilities that are only available in 'testing'
+RUN cat /etc/os-release && \
+    echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     apk add --update \
 		file \
 		atop \
@@ -38,7 +41,5 @@ RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/re
 		pv@testing \
 		sslscan@testing && \
     rm -rf /var/cache/apk/*
-
-WORKDIR /media/root
 
 CMD ["bash"]
