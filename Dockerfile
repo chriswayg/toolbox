@@ -27,12 +27,14 @@ RUN cat /etc/os-release && \
 		ncurses \
 		ncurses-terminfo \
                 nano \
+                xz \
 		zip \
 		ncdu \
 		hdparm \
 		obnam \
 		screen \
 		pciutils \
+		tar \
 		tree \
 		psmisc@testing \
 		speedtest-cli \
