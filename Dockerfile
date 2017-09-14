@@ -4,7 +4,7 @@ MAINTAINER Christian Wagner <chriswayg@gmail.com>
 # most utilities are from the latest stable alpine release
 # add some additional utilities that are only available in 'community'
 RUN cat /etc/os-release && \
-    echo "@community http://dl-6.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
+    echo "http://dl-4.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories && \
     apk add --update \
 		file \
 		atop \
@@ -37,9 +37,9 @@ RUN cat /etc/os-release && \
 		tar \
 		tree \
 		speedtest-cli \
-		psmisc@community \
-		shadow@community \
-		pv@community && \
+		psmisc \
+		shadow \
+		pv && \
     rm -rf /var/cache/apk/*
 
 CMD ["bash"]
