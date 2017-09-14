@@ -2,9 +2,9 @@ FROM alpine
 MAINTAINER Christian Wagner <chriswayg@gmail.com>
 
 # most utilities are from the latest stable alpine release
-# add some additional utilities that are only available in 'testing'
+# add some additional utilities that are only available in 'community'
 RUN cat /etc/os-release && \
-    echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
+    echo "@community http://dl-6.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
     apk add --update \
 		file \
 		atop \
@@ -36,12 +36,10 @@ RUN cat /etc/os-release && \
 		pciutils \
 		tar \
 		tree \
-		psmisc@testing \
 		speedtest-cli \
-		shadow@testing \
-		dstat@testing \
-		pv@testing \
-		sslscan@testing && \
+		psmisc@community \
+		shadow@community \
+		pv@community && \
     rm -rf /var/cache/apk/*
 
 CMD ["bash"]
