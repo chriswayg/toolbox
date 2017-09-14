@@ -5,6 +5,7 @@ MAINTAINER Christian Wagner <chriswayg@gmail.com>
 # add some additional utilities that are only available in 'community'
 RUN cat /etc/os-release && \
     echo "http://dl-4.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories && \
+    echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     apk add --update \
 		file \
 		atop \
@@ -36,6 +37,7 @@ RUN cat /etc/os-release && \
 		pciutils \
 		tar \
 		tree \
+		dstat@testing \
 		speedtest-cli \
 		psmisc \
 		shadow \
