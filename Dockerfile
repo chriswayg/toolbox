@@ -2,7 +2,7 @@ FROM alpine
 MAINTAINER Christian Wagner <chriswayg@gmail.com>
 
 # most utilities are from the latest stable alpine release
-# add some additional utilities that are only available in 'community'
+# added some utilities that are only available in 'community' or 'testing'
 RUN cat /etc/os-release && \
     echo "http://dl-4.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories && \
     echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
@@ -37,10 +37,11 @@ RUN cat /etc/os-release && \
 		pciutils \
 		tar \
 		tree \
-		dstat@testing \
 		speedtest-cli \
 		psmisc \
 		shadow \
+    tini@community \
+		dstat@testing \
 		pv && \
     rm -rf /var/cache/apk/*
 
