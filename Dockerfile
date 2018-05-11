@@ -45,4 +45,7 @@ RUN cat /etc/os-release && \
 		pv && \
     rm -rf /var/cache/apk/*
 
+# Set tini as entrypoint
+ENTRYPOINT ["/tini", "--"]
+
 CMD ["bash"]
