@@ -2,11 +2,12 @@ FROM alpine
 MAINTAINER Christian Wagner <chriswayg@gmail.com>
 
 # most utilities are from the latest stable alpine release
-# added some utilities that are only available in 'community' or 'testing'
+# added some utilities that are only available in edge 'community' or 'testing'
 RUN cat /etc/os-release && \
-    echo "http://dl-4.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories && \
+    echo "@edge http://nl.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories && \
     echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
-    apk add --update \
+    echo "@community http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
+    apk --no-cache add --update \
 		file \
 		atop \
 		htop \
