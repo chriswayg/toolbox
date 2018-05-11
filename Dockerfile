@@ -9,44 +9,44 @@ RUN cat /etc/os-release && \
     echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     echo "@community http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
     apk --no-cache add --update \
-		file \
-		atop \
-		htop \
-		ltrace \
-		strace \
-		sysstat \
-		bridge-utils \
-		ca-certificates \
-		iftop \
-		iperf \
-		iproute2 \
-		net-tools \
-		nmap \
-		tcpdump \
-		bash \
-		bash-completion \
-		gettext \
-		logrotate \
-		ncurses \
-		ncurses-terminfo \
+    file \
+    atop \
+    htop \
+    ltrace \
+    strace \
+    sysstat \
+    bridge-utils \
+    ca-certificates \
+    iftop \
+    iperf \
+    iproute2 \
+    net-tools \
+    nmap \
+    tcpdump \
+    bash \
+    bash-completion \
+    gettext \
+    logrotate \
+    ncurses \
+    ncurses-terminfo \
     nano \
     xz \
-		zip \
-		ncdu \
-		hdparm \
-		obnam \
-		screen \
-		pciutils \
-		tar \
-		tree \
-		speedtest-cli \
-		psmisc \
-		shadow \
+    zip \
+    ncdu \
+    hdparm \
+    obnam \
+    screen \
+    pciutils \
+    tar \
+    tree \
+    speedtest-cli \
+    psmisc \
+    shadow \
     tini@community \
-		dstat@testing \
-		pv
+    dstat@testing \
+    pv
 
 # Set tini as entrypoint
-ENTRYPOINT ["/tini", "--"]
+ENTRYPOINT ["tini", "--"]
 
 CMD ["bash"]
