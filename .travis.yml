@@ -12,6 +12,5 @@ script:
   - docker build -t toolbox .
 
   ## Test running the container with available toolbox commands.
-  - docker run --name=toolbox_1
+  - docker run --name=toolbox_1 toolbox
   - docker exec -t toolbox_1 pstree
-  
