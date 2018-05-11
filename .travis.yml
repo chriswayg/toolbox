@@ -1,0 +1,17 @@
+---
+services: docker
+
+before_install:
+  # Upgrade Docker.
+  - sudo apt-get update
+  - sudo apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce
+  - docker --version
+
+script:
+  # Test building Dockerfile.
+  - docker build -t toolbox .
+
+  ## Test running the container with available toolbox commands.
+  - docker run --name=toolbox_1
+  - docker exec -t toolbox_1 pstree
+  
