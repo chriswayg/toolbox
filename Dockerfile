@@ -27,8 +27,8 @@ RUN cat /etc/os-release && \
 		logrotate \
 		ncurses \
 		ncurses-terminfo \
-                nano \
-                xz \
+    nano \
+    xz \
 		zip \
 		ncdu \
 		hdparm \
