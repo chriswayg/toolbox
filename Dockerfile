@@ -1,5 +1,6 @@
 FROM alpine
 MAINTAINER Christian Wagner <chriswayg@gmail.com>
+ENV TERM=xterm
 
 # most utilities are from the latest stable alpine release
 # added some utilities that are only available in edge 'community' or 'testing'
@@ -43,8 +44,7 @@ RUN cat /etc/os-release && \
 		shadow \
     tini@community \
 		dstat@testing \
-		pv && \
-    rm -rf /var/cache/apk/*
+		pv
 
 # Set tini as entrypoint
 ENTRYPOINT ["/tini", "--"]
