@@ -16,6 +16,7 @@ RUN cat /etc/os-release && \
         bridge-utils \
         ca-certificates \
         coreutils \
+        dig \
         dstat@testing \
         file \
         gettext \
@@ -38,6 +39,7 @@ RUN cat /etc/os-release && \
         pciutils \
         psmisc \
         pv \
+        python2 \
         screen \
         shadow \
         speedtest-cli \
@@ -45,13 +47,10 @@ RUN cat /etc/os-release && \
         sysstat \
         tar \
         tcpdump \
-        tini@community \
         tree \
         xz \
         zip
 
 VOLUME ["/media/root"]
-
-ENTRYPOINT ["tini", "--"]
 
 CMD ["bash"]
