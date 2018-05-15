@@ -14,7 +14,7 @@ iftop iperf iproute2 net-tools nmap tcpdump
 bash bash-completion gettext logrotate ncurses nano
 ncdu hdparm obnam screen pciutils psmisc tree
 speedtest-cli shadow dstat pv sslscan
-git coreutils grep
+git coreutils grep dig python2
 ```
 
 Check the dockerfile for the complete list of tools.

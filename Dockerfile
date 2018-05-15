@@ -16,7 +16,7 @@ RUN cat /etc/os-release && \
         bridge-utils \
         ca-certificates \
         coreutils \
-        dig \
+        bind-tools \
         dstat@testing \
         file \
         gettext \
