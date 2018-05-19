@@ -1,5 +1,5 @@
 FROM alpine
-MAINTAINER Christian Wagner <chriswayg@gmail.com>
+LABEL maintainer="Christian Wagner https://github.com/chriswayg"  
 ENV TERM=xterm
 WORKDIR /media/root
 

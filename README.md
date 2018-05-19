@@ -19,7 +19,7 @@ git coreutils grep dig python2
 
 Check the dockerfile for the complete list of tools.
 
-#### CoreOS: set as the default toolbox and run:
+#### CoreOS - set as the default toolbox:
 
 ```
 sudo cat > ~/.toolboxrc << "EOF"
@@ -29,13 +29,17 @@ EOF
 toolbox
 ```
 
-#### On RancherOS: use as toolbox and run:
+#### On RancherOS:
 
+
+Initialize the toolbox:
 ```
 docker run -it --name toolbox -v /:/media/root --ipc=host --net=host --pid=host chriswayg/toolbox
-
-docker start -ia toolbox
 ```
+
+Run a command: `docker exec toolbox dig`
+Enter the toolbox: docker start -ia toolbox
+
 
 
 Inside of the toolbox, the machine's filesystem is mounted to /media/root
