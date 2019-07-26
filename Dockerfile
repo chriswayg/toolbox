@@ -35,7 +35,6 @@ RUN cat /etc/os-release && \
         ncurses-terminfo \
         net-tools \
         nmap \
-        obnam \
         pciutils \
         psmisc \
         pv \
