@@ -17,7 +17,6 @@ RUN cat /etc/os-release && \
         ca-certificates \
         coreutils \
         bind-tools \
-        dstat@testing \
         file \
         gettext \
         git \
