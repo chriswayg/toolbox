@@ -16,6 +16,7 @@ RUN cat /etc/os-release && \
         bridge-utils \
         ca-certificates \
         coreutils \
+        curl \
         bind-tools \
         file \
         gettext \
